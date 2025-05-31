@@ -47,12 +47,12 @@ const Index = () => {
   return (
     <div className="min-h-screen p-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center">Puzzle Selection Tools</h1>
+        <h1 className="text-3xl font-bold mb-6 text-center">Puzzle Selecctor</h1>
         
         <Tabs defaultValue="grid" className="w-full">
           <TabsList className="mb-4 w-full">
-            <TabsTrigger value="grid" className="flex-1">直角坐标系网格</TabsTrigger>
-            <TabsTrigger value="triangle" className="flex-1">三角形网格</TabsTrigger>
+            <TabsTrigger value="grid" className="flex-1">90 Coordinate System</TabsTrigger>
+            <TabsTrigger value="triangle" className="flex-1">60 Coordinate System</TabsTrigger>
           </TabsList>
           
           {/* 直角坐标系网格 */}
@@ -82,15 +82,15 @@ const Index = () => {
               
               <div>
                 <Card className="p-4 shadow-md h-full flex flex-col">
-                  <h2 className="text-xl font-semibold mb-4">选择结果</h2>
+                  <h2 className="text-xl font-semibold mb-4">Result</h2>
                   
                   <div className="mb-4">
-                    <div className="text-sm font-medium mb-1">已选择单元格数量:</div>
+                    <div className="text-sm font-medium mb-1">Selected Cells:</div>
                     <div className="text-3xl font-bold">{selectedCells.length}</div>
                   </div>
                   
                   <div className="mb-4">
-                    <div className="text-sm font-medium mb-1">坐标列表 (Python格式):</div>
+                    <div className="text-sm font-medium mb-1">Cell list (Python format):</div>
                     <div className="relative">
                       <textarea
                         className="w-full h-40 p-3 border rounded-md font-mono text-sm bg-gray-50"
@@ -135,15 +135,15 @@ const Index = () => {
               
               <div>
                 <Card className="p-4 shadow-md h-full flex flex-col">
-                  <h2 className="text-xl font-semibold mb-4">选择结果</h2>
+                  <h2 className="text-xl font-semibold mb-4">Result</h2>
                   
                   <div className="mb-4">
-                    <div className="text-sm font-medium mb-1">已选择三角形数量:</div>
+                    <div className="text-sm font-medium mb-1">Selected Cells:</div>
                     <div className="text-3xl font-bold">{selectedTriangles.length}</div>
                   </div>
                   
                   <div className="mb-4">
-                    <div className="text-sm font-medium mb-1">坐标列表 (Python格式):</div>
+                    <div className="text-sm font-medium mb-1">Cell list (Python format):</div>
                     <div className="relative">
                       <textarea
                         className="w-full h-40 p-3 border rounded-md font-mono text-sm bg-gray-50"

@@ -10,7 +10,7 @@ const GridControls = ({
   return (
     <div className="flex justify-between items-center mb-4">
       <div className="flex items-center space-x-2">
-        <span className="text-sm font-medium">网格大小:</span>
+        <span className="text-sm font-medium">Width:</span>
         <div className="flex items-center">
           <Button 
             variant="outline" 
@@ -32,7 +32,7 @@ const GridControls = ({
         </div>
       </div>
       <div className="flex items-center space-x-2">
-        <span className="text-sm font-medium">高度:</span>
+        <span className="text-sm font-medium">Height:</span>
         <div className="flex items-center">
           <Button 
             variant="outline" 
@@ -59,7 +59,7 @@ const GridControls = ({
         className="flex items-center"
       >
         <TrashIcon className="h-4 w-4 mr-1" />
-        清除选择
+        Clear
       </Button>
     </div>
   );

@@ -48,11 +48,11 @@ const ShapeInput = ({ onShapesImport }) => {
 
   return (
     <div className="border-t pt-4">
-      <h3 className="text-lg font-semibold mb-3">导入形状</h3>
+      <h3 className="text-lg font-semibold mb-3">Input Result</h3>
       <div className="space-y-3">
         <textarea
           className="w-full h-24 p-3 border rounded-md font-mono text-sm resize-none"
-          placeholder="格式：[[(0,0), (0,1), (1,1)], [(3,4), (4,3)]]"
+          placeholder="Format: [[[0,0], [0,1], [1,1]], [[3,4], [4,3]]]"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
         />
@@ -61,7 +61,7 @@ const ShapeInput = ({ onShapesImport }) => {
           className="w-full"
           disabled={!inputText.trim()}
         >
-          导入并显示形状
+          Display!
         </Button>
       </div>
     </div>
