@@ -1,0 +1,19 @@
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+
+build/** linguist-vendored
+node_modules/** linguist-vendored
+public/** linguist-vendored
+
+
+*.json linguist-generated
+*.lock linguist-generated
+*.yml linguist-generated
+*.yaml linguist-generated
+
+
+*.md linguist-documentation
+docs/** linguist-documentation
