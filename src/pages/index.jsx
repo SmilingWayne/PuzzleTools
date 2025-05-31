@@ -47,7 +47,7 @@ const Index = () => {
   return (
     <div className="min-h-screen p-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center">Puzzle Selecctor</h1>
+        <h1 className="text-3xl font-bold mb-6 text-center">Puzzle Selector</h1>
         
         <Tabs defaultValue="grid" className="w-full">
           <TabsList className="mb-4 w-full">
