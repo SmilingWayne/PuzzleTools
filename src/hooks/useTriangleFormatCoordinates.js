@@ -12,7 +12,7 @@ const useTriangleFormatCoordinates = () => {
         return a[2] - b[2];
       });
       
-      const coordsStr = sortedCoords.map(([x, y, z]) => `(${x},${y},${z})`).join(', ');
+      const coordsStr = sortedCoords.map(([x, y, z]) => `[${x},${y},${z}]`).join(', ');
       return `[${coordsStr}]`;
     };
   

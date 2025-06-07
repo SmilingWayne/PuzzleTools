@@ -11,7 +11,7 @@ const useFormatCoordinates = () => {
         return a[1] - b[1];
       });
       
-      const coordsStr = sortedCoords.map(([x, y]) => `(${x},${y})`).join(', ');
+      const coordsStr = sortedCoords.map(([x, y]) => `[${x},${y}]`).join(', ');
       return `[${coordsStr}]`;
     };
   

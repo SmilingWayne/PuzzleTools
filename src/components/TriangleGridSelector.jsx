@@ -17,9 +17,30 @@ const TriangleGridSelector = ({
   // 生成形状颜色
   const getShapeColors = () => {
     const colors = [
-      'fill-red-500', 'fill-blue-500', 'fill-green-500', 'fill-yellow-500', 
-      'fill-purple-500', 'fill-pink-500', 'fill-indigo-500', 'fill-orange-500',
-      'fill-teal-500', 'fill-cyan-500', 'fill-lime-500', 'fill-amber-500'
+      // 'fill-red-600', 'fill-blue-600', 'fill-green-600', 'fill-yellow-600', 
+      // 'fill-purple-600', 'fill-pink-600', 'fill-indigo-600', 'fill-orange-600',
+      // 'fill-teal-600', 'fill-cyan-600', 'fill-lime-600', 'fill-amber-600',
+      // 'fill-purple-300', 'fill-pink-300', 'fill-indigo-300', 'fill-orange-300',
+      // 'fill-teal-300', 'fill-cyan-300', 'fill-lime-300', 'fill-amber-300'
+      'fill-red-800',     'fill-orange-200',
+      'fill-amber-800',   'fill-lime-200',
+      'fill-green-800',   'fill-teal-200',
+      'fill-cyan-800',    'fill-sky-200',
+      'fill-blue-800',    'fill-indigo-200',
+      'fill-violet-800',  'fill-fuchsia-200',
+      'fill-pink-800',    'fill-rose-200',
+      'fill-purple-800',  'fill-yellow-200',
+      'fill-emerald-800', 'fill-cyan-200',
+      'fill-teal-800',    'fill-lime-200',
+      'fill-sky-800',     'fill-blue-200',
+      'fill-indigo-800',  'fill-violet-200',
+      'fill-fuchsia-800', 'fill-pink-200',
+      'fill-rose-800',    'fill-red-200',
+      'fill-orange-800',  'fill-amber-200',
+      'fill-lime-800',    'fill-green-200',
+      'fill-yellow-800',  'fill-emerald-200',
+      'fill-stone-800',   'fill-slate-200',
+      'fill-gray-800',    'fill-neutral-200'
     ];
     return colors;
   };
@@ -158,31 +179,6 @@ const TriangleGridSelector = ({
         }
       }
     }
-    // else if (startZ === 1 && endZ == 1) {
-    //   for (let x = minX; x <= maxX; x++) {
-    //     for (let y = minY; y <= maxY; y++) {
-    //       if (x === maxX && y === maxY ) {
-    //         if (isTriangleInSelectionBounds(x, y, 0)) {
-    //           triangles.push([x, y, 0]);
-    //         }
-    //       }
-    //       else if (x === minX && y === minY ) {
-    //         if (isTriangleInSelectionBounds(x, y, 1)) {
-    //           triangles.push([x, y, 1]);
-    //         }
-    //       }
-    //       else {
-    //         // 对于每个坐标位置，检查两个可能的三角形（z=0和z=1）
-    //         if (isTriangleInSelectionBounds(x, y, 0)) {
-    //           triangles.push([x, y, 0]);
-    //         }
-    //         if (isTriangleInSelectionBounds(x, y, 1)) {
-    //           triangles.push([x, y, 1]);
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
     
     return triangles;
   };
